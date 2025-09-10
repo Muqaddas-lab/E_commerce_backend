@@ -1,4 +1,3 @@
-// Import express and create a router instance
 import express from "express";
 
 // Import controller functions for user registration and login

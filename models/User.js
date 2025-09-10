@@ -1,4 +1,3 @@
-// Import required modules
 import mongoose from 'mongoose';
 import bcrypt from 'bcryptjs';
 

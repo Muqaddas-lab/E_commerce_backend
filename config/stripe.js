@@ -1,15 +1,15 @@
 import Stripe from "stripe";
 import dotenv from "dotenv";
 
-dotenv.config(); // yahan bhi safe side ke liye
+dotenv.config(); 
 
 const stripeKey = process.env.STRIPE_SECRET_KEY;
-// console.log("Stripe Key Loaded:", stripeKey);
+
 console.log("✅ Stripe Initialized with key:", stripeKey ? "Loaded" : "Not Loaded");
 
 if (!stripeKey) {
   console.error("❌ STRIPE_SECRET_KEY missing from .env file");
-  process.exit(1); // app crash kar dega agar key missing ho
+  process.exit(1); 
 }
 
 const stripe = new Stripe(stripeKey, {
